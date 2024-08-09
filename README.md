@@ -1,4 +1,4 @@
-# Proyecto de DAWA Segundo parcial:
+# Proyecto de DAWA Segundo Parcial:
 
 # ❱ Integrantes:
 
