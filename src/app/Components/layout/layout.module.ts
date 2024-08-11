@@ -15,6 +15,13 @@ import { ModalUsuarioComponent } from './Modales/modal-usuario/modal-usuario.com
 import { ModalProductoComponent } from './Modales/modal-producto/modal-producto.component';
 import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-detalle-venta.component';
 
+import { CategoriaComponent } from './Pages/categoria/categoria.component';
+import { ModalCategoriaComponent } from './Modales/modal-categoria/modal-categoria.component';
+import { CompraComponent } from './Pages/compra/compra.component';
+import { ModalDetalleCompraComponent } from './Modales/modal-detalle-compra/modal-detalle-compra.component';
+import { CartComponent } from './Pages/cart/cart.component';
+import { DesarrolladorComponent } from './Pages/desarrollador/desarrollador.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +33,13 @@ import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-
     ReporteComponent,
     ModalUsuarioComponent,
     ModalProductoComponent,
-    ModalDetalleVentaComponent
+    ModalDetalleVentaComponent,
+    CategoriaComponent,
+    ModalCategoriaComponent,
+    CompraComponent,
+    ModalDetalleCompraComponent,
+    CartComponent,
+    DesarrolladorComponent,
   ],
   imports: [
     CommonModule,

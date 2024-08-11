@@ -1,0 +1,47 @@
+/* styles.css o en el archivo del componente */
+.custom-toolbar {
+    background: linear-gradient(45deg, #28798d, #4b6eb9); /* Tonos azules oscuros */
+    color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-toolbar h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+  
+  .custom-toolbar .mat-icon-button {
+    color: white;
+  }
+  
+  .custom-sidenav-container {
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-sidenav {
+    background-color: #2a3e52; /* Ajustado para combinar con el gradiente de la barra de herramientas */
+    color: white;
+    padding-top: 20px;
+  }
+  
+  .custom-nav-list {
+    padding: 0;
+    
+  }
+  
+  .custom-list-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-list-item:hover {
+    background-color: #34495e; /* Un tono un poco más claro */
+    color: #1abc9c; /* Un color de acento */
+  }
+  
+  .custom-list-icon {
+    color: white;
+    margin-right: 15px;
+  }
+

@@ -1,41 +1,47 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <h1>Sistema Venta</h1>
+<mat-toolbar class="custom-toolbar">
+  <mat-toolbar-row>
+    <h1>TradeNet</h1>
 
-        <button mat-icon-button (click)="sidenav.toggle();">
-            <mat-icon>menu</mat-icon>
-        </button>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
 
-        <span style="flex: 1 1 auto;"></span>
-        <label style="font-size: 14px; margin-right: 20px;">
-            {{correoUsuario}} | {{rolUsuario}}
-        </label>
-        <button mat-icon-button (click)="cerrarSesion()">
-            <mat-icon>logout</mat-icon>
-        </button>
-
-    </mat-toolbar-row>
+    <span style="flex: 1 1 auto"></span>
+    <label style="font-size: 14px; margin-right: 20px">
+      {{ correoUsuario }} | {{ rolUsuario }}
+    </label>
+    <button mat-icon-button (click)="cerrarSesion()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container>
-    <mat-sidenav #sidenav opened="true" mode="side" style="width: 200px;"  >
-        <mat-nav-list>
+<mat-sidenav-container class="custom-sidenav-container">
+  <mat-sidenav
+    #sidenav
+    opened="true"
+    mode="side"
+    class="custom-sidenav"
+    style="width: 218px"
+  >
+    <mat-nav-list class="custom-nav-list">
+      
+      <mat-list-item
+        *ngFor="let menu of listaMenus"
+        [routerLink]="menu.url"
+        class="custom-list-item"
+      >
+        <mat-icon mat-list-icon class="custom-list-icon">{{
+          menu.icono
+        }}</mat-icon>
+        <div mat-line>{{ menu.nombre }}</div>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
 
-            <mat-list-item *ngFor="let menu of listaMenus"   [routerLink]="menu.url">
-                <mat-icon mat-list-icon>{{menu.icono}}</mat-icon>
-                <div mat-line>{{menu.nombre}}</div>
-            </mat-list-item>
-
-
-        </mat-nav-list>
-
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-        <div style="height: 90vh;">
-            <router-outlet></router-outlet>
-        </div>
-
-    </mat-sidenav-content>
-
+  <mat-sidenav-content>
+    <div style="height: 90vh">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>

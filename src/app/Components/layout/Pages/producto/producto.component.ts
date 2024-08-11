@@ -26,7 +26,7 @@ export class ProductoComponent implements OnInit, AfterViewInit{
 
   constructor(
     private dialog: MatDialog,
-    private _productoServicio:ProductoService,
+    private _productoServicio: ProductoService,
     private _utilidadServicio: UtilidadService
 
   ) { }

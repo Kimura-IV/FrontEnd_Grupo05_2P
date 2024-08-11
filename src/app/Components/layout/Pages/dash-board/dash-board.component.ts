@@ -14,6 +14,7 @@ export class DashBoardComponent implements OnInit {
   totalIngresos:string="0";
   totalVentas:string="0";
   totalProductos:string ="0";
+  totalCategorias:string ="0";
 
   constructor(
     private _dashboardServicio: DashBoardService
@@ -60,7 +61,8 @@ export class DashBoardComponent implements OnInit {
           this.totalIngresos = data.value.totalIngresos;
           this.totalVentas = data.value.totalVentas;
           this.totalProductos = data.value.totalProductos;
-
+          this.totalCategorias = data.value.totalCategorias;
+          
           const arrayData : any[] = data.value.ventasUltimaSemana;
           
 
